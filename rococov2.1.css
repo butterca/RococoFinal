@@ -1,0 +1,293 @@
+html {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+body {
+    font-size: 12px;
+    font-family: ink free;
+    color: white;
+    font-weight: bold;
+    background-image: url("try.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+
+
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-size: 64px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width : 768px)
+{
+  h1,
+h3,
+h5 {
+    font-size: 32px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+    h4 {
+        font-size: 20px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    }
+    
+    
+    button {
+        height: 80px;
+    margin: 20px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 32px;
+    text-align: center;
+    background: transparent;
+    font-weight: 700;
+    font-family: ink free;
+    color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #7FDBFF;
+    cursor: pointer;
+    transition: 1.0s;
+}
+    
+    input {
+    font-family: papyrus;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 20px;
+    height: 10%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: auto;
+    transition: 1.0s;
+}
+    
+    ::placeholder {
+    color: white;
+        font-size: 20px;
+}
+    
+}
+
+
+h2{
+    font-size: 32px;
+    color: white;
+    background-color: skyblue;
+    padding: 10px;
+    border: solid white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
+.header {
+    text-align: center;    
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: white;
+}
+
+
+.gameStuff {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+/*
+div{
+    text-align: center;
+}
+*/
+
+.questionOutput {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2x solid white;
+    background-color: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+#questionOutput {
+    color: white;
+}
+
+/*
+#sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    text-align: left;
+}
+*/
+
+
+.question1{
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
+@media only screen and (min-width : 768px){
+    button {
+    height: 80px;
+    margin: 40px;
+    width: 60%;    
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 64px;
+    text-align: center;
+    background: transparent;
+    font-weight: 700;
+    font-family: ink free;
+    color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #7FDBFF;
+    cursor: pointer;
+    transition: 1.0s;
+}
+   input {
+    font-family: papyrus;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 32px;
+    height: 10%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: auto;
+    transition: 1.0s;
+}
+    
+    ::placeholder {
+    color: white;
+        font-size: 32px;
+}
+    
+}
+#q1a{
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #2ECC40;
+    font-size: 200%;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+input {
+    font-family: papyrus;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 32px;
+    height: 10%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: auto;
+    transition: 1.0s;
+}
+
+input:hover {
+    background-color:darkblue;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+::placeholder {
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profPic {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*
+.buttonsAB{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.buttonsBC{
+   display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+
+#sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    text-align: left;
+}

@@ -1,0 +1,154 @@
+html {
+    width: 80%;
+    height: 80%;
+    align-content: center;
+  
+    
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+body {
+    font-size: 12px;
+    font-family: ink free;
+    color: white;
+    font-weight: bold;
+    background-image: url("try.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    
+
+    
+}
+
+h1, h3, h4, h5 {
+  margin: 0; 
+    color: white;
+    text-align: center;
+}
+
+h2{
+    border: 1px solid green;
+    outline-style: solid;
+    outline-color: darkseagreen;
+}
+
+
+.header{
+    
+    text-align: center;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+
+.gameStuff{
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+/*
+div{
+    text-align: center;
+}
+*/
+
+.questionOutput{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2x solid white;
+    background-color: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+#questionOutput{
+    color: white;
+}
+
+
+
+button{
+    margin: 25px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 80px;
+    font-size: 24px;
+    text-align: center;
+    background: transparent;
+    font-weight: 700;
+    font-family: ink free;
+    color: white;
+    border: 2px solid green;
+    
+}
+
+
+input{
+    font-family: papyrus;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid green;
+    margin-top: 100px; 
+    margin: auto;
+}
+
+::placeholder{
+    color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    text-align: center;
+}
+
+.profPic{
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*
+.buttonsAB{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.buttonsBC{
+   display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+.video{
+    width: 100%;
+    height: 100%;
+}

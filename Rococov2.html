@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale =1, user-scalable = 0">
+    
+    <link rel="stylesheet" type="text/css" href="rococov2.1.css" > 
+    
+    <title>Rococo V1</title>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase.js"></script>
+
+</head>
+
+<body>
+    
+        <!--
+        <audio controls autoplay>
+            <source src="safetydance.mp3" type="audio/mpeg" />
+        </audio>
+        
+        
+        <iframe src="safetydance.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+        
+    
+        <script>
+            window.onload = function() {
+            var context = new AudioContext();
+        }
+        </script>
+    
+            -->
+    
+        <audio id ="backM" autoplay loop>
+            <source src="safetydance.mp3" type="audio/mp3">
+        </audio>
+    
+        <h4 id="playerNameOutput">Nickname</h4>
+
+        <h4 id="score">Score:</h4>
+    
+        <h4 id="roomIDOutput">Room ID </h4>
+    
+        <h1 id = "header"> ROCOCO </h1>
+    
+        <h1 id="directions"> </h1>
+    
+        <button id="createGameButton"> Create A Game </button>
+    
+        <button id="startCreatedGameButton"> Start A Game </button>
+    
+        <input type="textfield" placeholder="enter Unique Game Name here" id="gameName" />
+    
+    
+        <button id="playCreatedGame"> PLAY THIS GAME </button>
+    
+        <button id="playGameOfWeek"> PLAY THE GAME OF THE WEEK </button>
+    
+        <button id="mainScreenYesButton"> YES </button>
+        
+        <button id="mainScreenNoButton"> NO </button>
+    
+        <button id = "joinAGameButton">Join A Game</button>
+
+        <input type="textfield" placeholder="enter Room ID here" id="roomIDInput" />
+            
+        <input type="textfield" placeholder="enter nickname here" id="playerNameInput" />
+    
+        
+        <button id = "startGameButton"> Start Game </button>
+    
+        <button id = "joinRoomButton"> Join Room</button>
+    
+        <!--<button id = "backToMainButton"> Back To Main</button>
+    
+        <button id = "backButton" onclick="goBack()">Go Back</button>-->
+            
+        <h1 id="questionOutput"> Here is your question!!! </h1>
+    
+        <!-- <span id="countdown">10</span> -->
+    
+        <input type="textfield" placeholder="enter Game Name here" id="createdGameName" />
+    
+        <div id = "q1a">
+            
+        <div id = "sidebar">
+            <button id = "question1"> Question 1</button>
+        </div>
+        
+    
+        <input type="textfield" placeholder="enter First Question here" id="question1Input" />
+        <input type="textfield" placeholder="enter Option A here" id="question1OptionAInput" />
+        <button id = "question1CorrectAnswerAButton"> Correct Answer </button>
+        <input type="textfield" placeholder="enter Option B here" id="question1OptionBInput" />
+        <button id = "question1CorrectAnswerBButton"> Correct Answer </button>
+        <input type="textfield" placeholder="enter Option C here" id="question1OptionCInput" />
+        <button id = "question1CorrectAnswerCButton"> Correct Answer </button>
+        <input type="textfield" placeholder="enter Option D here" id="question1OptionDInput" />
+        <button id = "question1CorrectAnswerDButton"> Correct Answer </button>
+        <input type="textfield" placeholder="enter Option 5 here" id="question1Option1Input" />
+        <button id = "question1CorrectAnswer1Button"> Correct Answer </button>
+        <input type="textfield" placeholder="enter Option 6 here" id="question1Option2Input" />
+        <button id = "question1CorrectAnswer2Button"> Correct Answer </button>
+        <input type="textfield" placeholder="enter correct answer here" id="question1CorrectAnswerInput" />
+        
+        </div>
+    
+        <button id = "addQuestionButton"> Add Question </button>
+        <button id = "doneCreatingGameButton"> DONE </button>
+    
+    
+    
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+
+        <input type="textfield" placeholder="enter response here" id="response1" />
+        <input type="textfield" placeholder="enter response here" id="response2" />
+        <input type="textfield" placeholder="enter response here" id="response3" />
+
+        <button id="submitResponseButton">Submit Response(s)!</button>
+            
+
+        
+        <button id="buttonA" onclick = "return checkMCAnswer(this.id);">Option A</button>
+        <button id="buttonB" onclick = "return checkMCAnswer(this.id);">Option B</button>
+        <button id="buttonC" onclick = "return checkMCAnswer(this.id);">Option C</button>
+        <button id="buttonD" onclick = "return checkMCAnswer(this.id);">Option D</button>
+        
+
+            <button id="true">TRUE</button>
+            <button id="false">FALSE</button>
+
+            <button id="buttonAdd0" onclick = "return checkMCAnswer(this.id);">Add 0</button>
+            <button id="buttonAdd1" onclick = "return checkMCAnswer(this.id);">Add 1</button>
+    
+    
+    
+    
+            <h2 id = "optionA" ></h2>
+            <h2 id = "optionB" ></h2>
+            <h2 id = "optionC" ></h2>
+            <h2 id = "optionD" ></h2>
+            <h2 id = "option1" ></h2>
+            <h2 id = "option2" ></h2>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <button id="buttonAdd2" onclick = "return checkRMCAnswer(this.id);">Add 2</button>
+            <button id="buttonAdd3" onclick = "return checkRMCAnswer(this.id);">Add 3</button>
+            <button id="buttonAdd4" onclick = "return checkRMCAnswer(this.id);">Add 4</button>
+            <button id="buttonAdd5" onclick = "return checkMCAnswer(this.id);">Add 5</button>
+            <button id="buttonAdd6" onclick = "return checkMCAnswer(this.id);">Add 6</button>
+            <button id="buttonAdd7" onclick = "return checkMCAnswer(this.id);">Add 7</button>
+            <button id="buttonAdd8" onclick = "return checkMCAnswer(this.id);">Add 8</button>
+            <button id="buttonAdd9" onclick = "return checkMCAnswer(this.id);">Add 9</button>
+            <button id="buttonAdd10" >NEXT</button>
+            <button id="buttonAdd11" onclick = "return checkMCAnswer(this.id);">Add 11</button>
+            <button id="buttonAdd12" onclick = "return checkMCAnswer(this.id);">Add 12</button>
+            <button id="buttonAdd13" onclick = "return checkMCAnswer(this.id);">Add 13</button>
+            <button id="buttonAdd14" onclick = "return checkMCAnswer(this.id);">Add 14</button>
+            <button id="buttonAdd15" onclick = "return checkMCAnswer(this.id);">Add 15</button>
+            <button id="buttonAdd16" onclick = "return checkMCAnswer(this.id);">Add 16</button>
+            <button id="buttonAdd17" onclick = "return checkMCAnswer(this.id);">Add 17</button>
+            <button id="buttonAdd18" onclick = "return checkMCAnswer(this.id);">Add 18</button>
+            <button id="buttonAdd19" onclick = "return checkMCAnswer(this.id);">Add 19</button>
+            <button id="buttonAdd20">Get Results</button>
+            <button id="buttonAdd21" onclick = "return checkMCAnswer(this.id);">Add 21</button>
+            <button id="buttonAdd22" onclick = "return checkMCAnswer(this.id);">Add 22</button>
+            <button id="buttonAdd23" onclick = "return checkMCAnswer(this.id);">Add 23</button>
+            <button id="buttonAdd24" onclick = "return checkMCAnswer(this.id);">Add 24</button>
+
+
+            <progress value = "0" max = "10" id="progressBar" ></progress>
+
+
+            <!--<button id = "makeButton"> Add Button </button> -->
+
+        <script type= "text/javascript" src="./rocococlass.js"></script>
+    
+    
+</body>
+    
+    
+
+</html>
